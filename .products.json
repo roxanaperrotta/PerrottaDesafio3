@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "sandía",
+    "description": "fruta",
+    "price": 1500,
+    "thumbnail": "imagen no disponible",
+    "code": "f1111",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "title": "milanesa",
+    "description": "carne",
+    "price": 1500,
+    "thumbnail": "imagen no disponible",
+    "code": "c1112",
+    "stock": 10
+  },
+  {
+    "id": 3,
+    "title": "jamón crudo",
+    "description": "fiambre",
+    "price": 1800,
+    "thumbnail": "imagen no disponible",
+    "code": "fi1113",
+    "stock": 5
+  },
+  {
+    "id": 5,
+    "title": "remolacha",
+    "description": "vegetal",
+    "price": 3000,
+    "thumbnail": "imagen no disponible",
+    "code": "v6789",
+    "stock": 10
+  }
+]
