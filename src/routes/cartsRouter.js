@@ -1,16 +1,18 @@
 import express from "express";
-import CartManager from "../CartManager.js";
+import CartManager from "../managers/CartManager.js";
+
 
 const cartManager = new CartManager;
 
 const router = express.Router();
 
-router.get("/api/carts", (req, res)=>{
+router.get("/", (req, res)=>{
 
-    res.json(this.carts);
+    res.json(cartManager.carts);
 })
 
- router.post("/cart", async (req, res)=>{
+
+router.post("/cart", async (req, res)=>{
     try {
         const cart=req.body
         const newCart = await cartManager.addCart(cart)
@@ -22,7 +24,7 @@ router.get("/api/carts", (req, res)=>{
     }
  });
 
- router.get("/cart/:cid", async (req, res)=>{
+router.get("/cart/:cid", async (req, res)=>{
     try {
         const id = parseInt (req.params.cid);
         const cart = await cartManager.getCartById(id);
