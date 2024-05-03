@@ -8,21 +8,20 @@ class ProductManager{
     }
 
 
-    addProduct(title, description, price, code, thumbnail="imagen no disponible",  stock=10){
-
-    // crear el producto nuevo
-
+    addProduct (product){
+    
+        const {title, description, code, price, thumbnail="imagen no disponible",  stock=10} = product
+    
         const newProduct={
             id: this.products.length + 1,
-            title,
-            description,
-            price, 
-            thumbnail, 
-            code,
-            stock
-
-        }
-
+            title:title,
+            description:description,
+            code:code,
+            price:price, 
+            stock:stock,
+            thumbnail:thumbnail
+        };
+        
     // Validación de inputs
 
         if (typeof title !== 'string' || title.trim() === '') {

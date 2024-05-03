@@ -1,15 +1,20 @@
 [
   {
     "id": 1,
-    "title": {
-      "title": "pera",
-      "description": "fruta",
-      "code": "pf2",
-      "price": 4000,
-      "stock": 40,
-      "thumbnail": "no disponible"
-    },
-    "thumbnail": "imagen no disponible",
-    "stock": 10
+    "title": "frambuesa",
+    "description": "fruta",
+    "code": "ff6",
+    "price": 4000,
+    "stock": 40,
+    "thumbnail": "no disponible"
+  },
+  {
+    "id": 2,
+    "title": "mandarina",
+    "description": "fruta",
+    "code": "mf6",
+    "price": 1000,
+    "stock": 20,
+    "thumbnail": "no disponible"
   }
 ]
